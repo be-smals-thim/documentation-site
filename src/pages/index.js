@@ -1,12 +1,3 @@
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- *
- * @format
- */
-
 import React from 'react';
 import classnames from 'classnames';
 import Layout from '@theme/Layout';
@@ -17,32 +8,20 @@ import styles from './styles.module.css';
 
 const features = [
   {
-    title: <>Easy to Use</>,
-    imageUrl: 'img/undraw_docusaurus_mountain.svg',
+    title: <>Deep into our documentation</>,
+    imageUrl: 'img/icon_doc.svg',
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+          Visit the <code>docs</code> directory.
       </>
     ),
   },
   {
-    title: <>Focus on What Matters</>,
-    imageUrl: 'img/undraw_docusaurus_tree.svg',
+    title: <>Stay informed with our blog</>,
+    imageUrl: 'img/icon_blog.svg',
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
-      </>
-    ),
-  },
-  {
-    title: <>Powered by React</>,
-    imageUrl: 'img/undraw_docusaurus_react.svg',
-    description: (
-      <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Visite our blog to saty informed or to increase your knowledge of our product.
       </>
     ),
   },
@@ -51,7 +30,7 @@ const features = [
 function Feature({imageUrl, title, description}) {
   const imgUrl = useBaseUrl(imageUrl);
   return (
-    <div className={classnames('col col--4', styles.feature)}>
+    <div className={classnames('col col--6 text--center', styles.feature)}>
       {imgUrl && (
         <div className="text--center">
           <img className={styles.featureImage} src={imgUrl} alt={title} />
@@ -81,7 +60,7 @@ function Home() {
                 styles.getStarted,
               )}
               to={useBaseUrl('docs/doc1')}>
-              Get Started
+              Learn how to use our application <i class="fas fa-long-arrow-alt-right ml-2"></i>
             </Link>
           </div>
         </div>
@@ -91,13 +70,8 @@ function Home() {
           <section className={styles.features}>
             <div className="container">
               <div className="row">
-                {features.map(({title, imageUrl, description}) => (
-                  <Feature
-                    key={title}
-                    title={title}
-                    imageUrl={imageUrl}
-                    description={description}
-                  />
+                {features.map((props, idx) => (
+                  <Feature key={idx} {...props} />
                 ))}
               </div>
             </div>

@@ -16,21 +16,15 @@ module.exports = {
   organizationName: 'ebox', // Usually your GitHub org/user name.
   projectName: 'eboxenterprise-integration-site', // Usually your repo name.
   themeConfig: {
+    disableDarkMode: true,
     navbar: {
-      title: 'Ebox Enterprise Integration Site',
       logo: {
-        alt: 'My Facebook Project Logo',
-        src: 'img/logo.svg',
+        alt: 'Ebox Enterprise Integration Site',
+        src: 'img/logo_ebox.svg',
       },
       links: [
-        {to: 'docs/doc1', label: 'Docs', position: 'left'},
-        {to: 'blog', label: 'Blog', position: 'left'},
-        // Please keep GitHub link to the right for consistency.
-        {
-          href: 'https://github.com/facebook/docusaurus',
-          label: 'GitHub',
-          position: 'right',
-        },
+        {to: 'docs/doc1', label: 'Docs', position: 'right'},
+        {to: 'blog', label: 'Blog', position: 'right'},
       ],
     },
     footer: {
