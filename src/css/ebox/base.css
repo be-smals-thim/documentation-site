@@ -1,0 +1,36 @@
+h1, h2, h3 {
+    word-break: break-word;
+    hyphens: auto;
+}
+
+h1 {
+    font-weight: var(--ifm-font-weight-bold) !important;
+    color: var(--ifm-heading-color-secondary) !important;
+}
+h2 {
+    color: var(--ifm-heading-color-secondary) !important;
+    text-transform: uppercase;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--ifm-heading-color);
+    font-weight: var(--ifm-heading-font-weight);
+    line-height: var(--ifm-heading-line-height);
+    margin-bottom: var(--ifm-heading-margin-bottom);
+    margin-top: var(--ifm-heading-margin-top);
+}
+
+h1 a, h2 a, h3 a {
+    text-decoration: none;
+    color: var(--ifm-heading-color-secondary);
+}
+.menu {
+    font-weight: var(--ifm-font-weight-normal);
+}
+.avatar .avatar__intro {
+    padding-left: .5rem;
+}

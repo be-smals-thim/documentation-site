@@ -13,8 +13,9 @@
     "prettier:diff": "prettier --config .prettierrc --list-different \"**/*.{js,md}\""
   },
   "dependencies": {
-    "@docusaurus/core": "^2.0.0-alpha.43",
-    "@docusaurus/preset-classic": "^2.0.0-alpha.43",
+    "@docusaurus/core": "^2.0.0-alpha.51",
+    "@docusaurus/preset-classic": "^2.0.0-alpha.51",
+    "@fortawesome/fontawesome-free": "^5.13.0",
     "classnames": "^2.2.6",
     "react": "^16.8.4",
     "react-dom": "^16.8.4"

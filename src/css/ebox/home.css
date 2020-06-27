@@ -1,0 +1,74 @@
+/* home content */
+.featureImage_src-pages- {
+    height: 100px !important;
+    width: 100px !important;
+}
+.hero.hero--primary {
+    --ifm-hero-background-color: var(--ifm-color-primary-lighter);
+    --ifm-hero-text-color: var(--ifm-font-color-base-inverse);
+    background-image: url('/eboxenterprise-integration-site/img/bg-birds.jpg');
+    background-position: 30% 29%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.hero.hero--primary:after {
+    background: linear-gradient(to right,rgba(1,137,67,.40) 0,rgba(37,116,169,.40) 100%);
+    display: block;
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 0;
+}
+.hero.hero--primary .container {
+    z-index: 1;
+}
+.hero .hero__title {
+    font-weight: var(--ifm-font-weight-normal) !important;
+    color: var(--ifm-font-color-base-inverse) !important;
+}
+
+/* button outline design like static website */
+.button.button--secondary.button--outline:not(.button--active):not(:hover) {
+    color: var(--ifm-font-color-base-inverse);
+}
+
+.button.button--outline {
+    --ifm-button-background-color: transparent;
+    --ifm-button-color: var(--ifm-font-color-base);
+    white-space: normal;
+    overflow: hidden;
+    position: relative;
+    transition: color .1s;
+    z-index: 1;
+    font-weight: var(--ifm-button-font-weight);
+}
+
+.button.button--outline:hover {
+    --ifm-button-background-color: transparent;
+    transition: color .2s;
+}
+
+.button--outline:before {
+    content: "";
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 120%;
+    padding-bottom: 75%;
+    transform: translate(100%,-50%);
+    transition: all .35s;
+    transition-timing-function: cubic-bezier(.7,0,.9,1);
+    z-index: -1;
+    background-color: var(--ifm-font-color-base-inverse);
+}
+
+.button--outline:hover:before {
+    transform: translate(-10%,-50%);
+}
+

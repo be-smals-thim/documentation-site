@@ -1,0 +1,66 @@
+/* navbar */
+.navbar .navbar__brand,
+.navbar .navbar__link {
+    color: white;
+    font-weight: var(--ifm-font-weight-normal);
+}
+.navbar .navbar__link:hover {
+    color: var(--ifm-font-color-base-inverse);
+    border-bottom: 1px solid var(--ifm-font-color-base-inverse);
+}
+.navbar__items {
+    color: white;
+}
+.navbar .navbar__link.navbar__link--active {
+    border-bottom: 1px solid white;
+    color: white;
+}
+.navbar .navbar__link {
+    border-bottom: 1px solid transparent;
+    margin-left: 1rem;
+}
+.navbar .navbar__toggle {
+    color: white;
+    padding-top: .5rem;
+}
+
+.navbar {
+    background-color: transparent;
+    background-image: url('/eboxenterprise-integration-site/img/bg-birds.jpg');
+    background-position: 30% 29%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: var(--ifm-navbar-height-ebox);
+}
+.navbar .navbar__logo {
+    height: 140%;
+}
+.navbar:after {
+    background: linear-gradient(to right,rgba(1,137,67,.93) 0,rgba(37,116,169,.93) 100%);
+    display: block;
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: -1;
+}
+.navbar-sidebar--show  .navbar-sidebar__brand  {
+    background-color: var(--ifm-heading-color-secondary);
+}
+
+.navbar-sidebar--show .navbar__logo {
+    height: 100%;
+}
+
+@media screen and (max-width: 576px) {
+    .navbar .navbar__logo {
+        height: 120%;
+    }
+    .navbar {
+        height: var(--ifm-navbar-height);
+    }
+}

@@ -1,33 +1,68 @@
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- *
- * @format
- */
-
+/* stylelint-disable docusaurus/copyright-header */
 /**
  * Any CSS included here will be global. The classic template
  * bundles Infima by default. Infima is a CSS framework designed to
  * work well for content-centric websites.
  */
 
+@import "ebox/fonts.css";
+
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: rgb(33, 175, 144);
-  --ifm-color-primary-darker: rgb(31, 165, 136);
+  --ifm-font-size-base: 15px;
+  --ifm-color-primary-dark: blue;
+  --ifm-color-primary-darker: #24272c;
+  --ifm-color-green: #018943;
+  --ifm-color-primary: var(--ifm-color-primary-darker);
   --ifm-color-primary-darkest: rgb(26, 136, 112);
-  --ifm-color-primary-light: rgb(70, 203, 174);
-  --ifm-color-primary-lighter: rgb(102, 212, 189);
+  --ifm-color-primary-light: #dadada;
+  --ifm-color-primary-lighter: #e4e3e8;
   --ifm-color-primary-lightest: rgb(146, 224, 208);
   --ifm-code-font-size: 95%;
+  --ifm-navbar-height: 4.5rem;
+  --ifm-font-family-base: 'open-sans', system-ui, -apple-system, BlinkMacSystemFont,
+  'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji',
+  'Segoe UI Emoji', 'Segoe UI Symbol';
+  --ifm-heading-color: inherit;
+  --ifm-heading-color-secondary: #2574a9;
+  --ifm-heading-margin-top: 0;
+  --ifm-heading-margin-bottom: var(--ifm-spacing-vertical);
+  --ifm-heading-font-family: inherit;
+  --ifm-heading-font-weight: var(--ifm-font-weight-normal);
+  --ifm-heading-line-height: 1.25;
+
+  --ifm-h1-font-size: 2rem;
+  --ifm-h2-font-size: 1.5rem;
+  --ifm-h3-font-size: 1.25rem;
+  --ifm-h4-font-size: 1rem;
+  --ifm-h5-font-size: 0.875rem;
+  --ifm-h6-font-size: 0.85rem;
+
+  --ifm-footer-background-color: var(--ifm-color-primary-darker);
+  --ifm-footer-link-color: white;
+  --ifm-navbar-item-padding-horizontal: .25rem;
+  --ifm-navbar-height-ebox: 5rem;
+  --ifm-navbar-height: 3.75rem;
+  --ifm-button-font-weight: var(--ifm-font-weight-normal);
+  --ifm-link-color: var(--ifm-color-green);
+  --ifm-contents-link-color: var(--ifm-color-green);
+  --ifm-link-decoration: underline;
 }
 
+/* header */
 .docusaurus-highlight-code-line {
   background-color: rgb(72, 77, 91);
   display: block;
   margin: 0 calc(-1 * var(--ifm-pre-padding));
   padding: 0 var(--ifm-pre-padding);
 }
+
+
+@import "ebox/base.css";
+@import "ebox/navbar.css";
+@import "ebox/home.css";
+@import "ebox/footer.css";
+
+
+
+
