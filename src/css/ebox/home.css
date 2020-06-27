@@ -6,7 +6,7 @@
 .hero.hero--primary {
     --ifm-hero-background-color: var(--ifm-color-primary-lighter);
     --ifm-hero-text-color: var(--ifm-font-color-base-inverse);
-    background-image: url('/eboxenterprise-integration-site/img/bg-birds.jpg');
+    background-image: url('/img/bg-birds.jpg');
     background-position: 30% 29%;
     background-repeat: no-repeat;
     background-size: cover;

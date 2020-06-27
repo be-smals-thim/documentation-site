@@ -11,7 +11,7 @@ module.exports = {
   title: 'Ebox Enterprise Integration Site',
   tagline: 'Integrate',
   url: 'https://ebox.github.io',
-  baseUrl: '/eboxenterprise-integration-site/',
+  baseUrl: '/',
   favicon: 'img/favicon.ico',
   organizationName: 'ebox', // Usually your GitHub org/user name.
   projectName: 'eboxenterprise-integration-site', // Usually your repo name.
