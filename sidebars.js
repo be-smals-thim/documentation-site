@@ -9,7 +9,13 @@
 
 module.exports = {
   someSidebar: {
+    Introduction:['introduction'],
+    "Document Provider":[
+        'dp/introduction',
+        'dp/consultation_profile',
+        'dp/consultation_profile'],
     Docusaurus: ['doc1', 'doc2', 'doc3'],
     Features: ['mdx'],
+
   },
 };
