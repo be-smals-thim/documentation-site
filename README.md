@@ -1,3 +1,30 @@
+# Quick Reference
+
+## XML portion should be properly formatted
+
+You cannot have <endpoint> without the closing </endpoint> tag. Also not sure that it will work as these are not
+valid HTML tags. If you need to use <br/> don't forget the trailling /
+
+## MD file header should always be present
+
+The system will gracefully handle missing headers but things like title and proper sidebar name will be missing.
+
+Here is an example:
+```---
+id: document_consumer_entry
+title: Becoming a Document Consumer
+sidebar_label: Introduction
+---
+``` 
+
+Sidebar label is optional: If the sidebar label is the same as the title you can remove the sidebar_label property.
+Id is optional: id is only to be used if the id is different that the file name, which is not recommended 
+
+## Do not use level 1 titles, use the `title` header property instead
+
+## When something does not make sense, kill the process and relaunch
+
+
 # Website
 
 This website is built using [Docusaurus 2](https://v2.docusaurus.io/), a modern static website generator.

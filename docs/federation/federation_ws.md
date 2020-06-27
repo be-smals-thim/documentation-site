@@ -1,6 +1,10 @@
-# Enterprise Federation WS
+---
+title: Ebox Enterprise Federation Service
+sidebar_label: Ebox Federation Service
+---
 
-The Federation WS allows to 
+
+The Ebox Federation Service allows to 
 - Know the list of Document Providers
 - Know the preferences of a particular e-Box (enterprise)
 

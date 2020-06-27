@@ -1,8 +1,9 @@
+---
+title: Message Registry Service - Consultation Profile
+sidebar_label: Consultation Profile
+---
 
-
-# Message Registry Service
-
-In order to be a Document Provider one MUST implement a Message Registry Service and Register that service on the Provider Registry Service. This service MUST follow the [e-Box Message Registry open API Spec](../openapi/ebox-rest_page.md)
+In order to be a Document Provider one MUST implement a Message Registry Service and Register that service on the Provider Registry Service. This service MUST follow the [e-Box Message Registry open API Spec](../spec/specifications.md)
 
 ## Introspect of an e-Box Enterprise Oauth Token
 
@@ -77,7 +78,7 @@ From all of the API endpoints, only a few are actually used by the portal.
 
 ### Required fields
 
-The fields ``items`` and ``totalItems`` are required in the following Json Schemas described in the [API](../openapi/ebox-rest_page.md):
+The fields ``items`` and ``totalItems`` are required in the following Json Schemas described in the [API](../spec/specifications.md):
 
 - ``Attachments``
 - ``BusinessDataList``

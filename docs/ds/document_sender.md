@@ -1,6 +1,9 @@
-# Becoming a Document Sender
+---
+title: Becoming a Document Sender
+sidebar_label: Introduction
+---
 
-Publication happen through the ```/publishMessage``` method of the [e-Box RESTful API](../openapi/ebox-rest_page.md)
+Publication happen through the ```/publishMessage``` method of the [e-Box RESTful API](../spec/specifications.md)
 The method uses a multipart HTTP POST to send up to 6 documents attached to a an e-Box Message. The API fully support [end to end streaming](#EndToEndStreamingConsiderations).
 
 The authentication has to be done via a [OAuth2 token request](#getToken). See the [Document Sender onboarding process](onboarding_process.md) to configure your enterprise as a new OAuth client.
@@ -126,7 +129,7 @@ Once you have got your token, you can call a method using one of these endpoints
 
 ## <a id="EndToEndStreamingConsiderations"></a>End to end Streaming Considerations
 
-The order of HTTP parts is arbitrary, each part being linked to its associated meta-data by the ``httpPartName`` property of the publication payload. This allows for end to end streaming on the Document Sender side. See the [Publication Profile Documentation for more information](../document_provider/publication_profile.md#OrderOfTheHttpParts).
+The order of HTTP parts is arbitrary, each part being linked to its associated meta-data by the ``httpPartName`` property of the publication payload. This allows for end to end streaming on the Document Sender side. See the [Publication Profile Documentation for more information](../dp/publication_profile.md#OrderOfTheHttpParts).
 
 ## Examples with Postman
 If you use Postman, you might be interested in a [Postman publication examples collection](../examples/postman/e-Box%20Enterprise%20REST%20Publication%20examples.postman_collection.json).

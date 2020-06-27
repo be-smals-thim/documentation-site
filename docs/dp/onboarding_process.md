@@ -1,4 +1,8 @@
-# Onboarding process to become a Document Provider
+---
+title: Onboarding process to become a Document Provider
+sidebar_label: Onboarding
+---
+
 ![Diagram: DocProvider onboarding process](../media/docProviderOnboardingProcess.png)
 
 ## DocProvider initial request

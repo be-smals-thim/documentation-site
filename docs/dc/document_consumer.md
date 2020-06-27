@@ -1,9 +1,12 @@
-# Becoming a Document Consumer
+---
+title: Becoming a Document Consumer
+sidebar_label: Introduction
+---
 
-Message consultation happen via a HTTP GET through all the methods that start with ```/ebox``` defined in the [e-Box RESTful API](../openapi/ebox-rest_page.md).
+Message consultation happen via a HTTP GET through all the methods that start with ```/ebox``` defined in the [e-Box RESTful API](../spec/specifications.md).
 This specification is available in the .yaml format.
 So a Document Consumer can not only consult his messages but also reference data.
-The ```/publishMessage``` method is available only for [Document Sender](../document_sender/document_sender.md) and [Document Provider](../document_provider/document_provider.md).
+The ```/publishMessage``` method is available only for [Document Sender](../ds/document_sender.md) and [Document Provider](../dp/document_provider.md).
 
 ## Getting an Oauth Token for consultation
 The [oauth introspect example](../examples/ouath-introspect) shows how an Oauth token can be retrieved.
@@ -41,5 +44,5 @@ Among them, you can find our Document Provider:
 | Production | ``https://services.socialsecurity.be/REST/ebox/enterprise/messageRegistry/v2/``      |
 
 ## Implementation choices
-- The counters you get in the summary of your e-Box (that you can get with a GET on <endpoint>/ebox) take also into account the message set to not visible.
+- The counters you get in the summary of your e-Box (that you can get with a GET on /ebox resource) take also into account the message set to not visible.
 - If you request to get a reference data, the lists messageTypeIds, senderOrganizationIds and senderApplicationIds in response will be empty.

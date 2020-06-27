@@ -1,3 +1,7 @@
+---
+title: EES Latest
+sidebar_label: EES Latest
+---
 swagger: '2.0'
 info:
   description: This is an API to interact with the events platform of the Belgian federal government

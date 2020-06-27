@@ -9,13 +9,31 @@
 
 module.exports = {
   someSidebar: {
-    Introduction:['introduction'],
+    "Introduction":['introduction'],
+    "Document Sender":[
+        'ds/document_sender',
+        'ds/onboarding_process',
+    ],
     "Document Provider":[
-        'dp/introduction',
-        'dp/consultation_profile',
-        'dp/consultation_profile'],
-    Docusaurus: ['doc1', 'doc2', 'doc3'],
-    Features: ['mdx'],
-
+      'dp/document_provider',
+      'dp/onboarding_process',
+      'dp/consultation_profile',
+      'dp/publication_profile'
+    ],
+    "Document Consumer":[
+      'dc/document_consumer',
+      'dc/onboarding_process',
+    ],
+    "Federation Services":[
+      'federation/enterprise_ebox_event_service',
+      'federation/federation_ws'
+    ],
+    "Other":[
+      "common/glossary",
+      "common/x509_certificate",
+    ],
+    "Specs":[
+      "spec/specifications"
+    ]
   },
 };

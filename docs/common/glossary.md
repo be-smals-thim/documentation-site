@@ -1,4 +1,6 @@
-# Glossary: Organisation - Application - Message Type
+---
+title: Glossary
+---
 
 ## Sender
 The organisation, the application and the message types are part of the reference data and are relative to the sender organisation that can publish messages

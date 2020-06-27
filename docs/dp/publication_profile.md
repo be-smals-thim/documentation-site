@@ -1,7 +1,10 @@
-# Implementing the Document Provider Publication Profile
+---
+title: Implementing the Document Provider Publication Profile
+sidebar_label: Publication Profile
+---
 
 
-## <a name = "OrderOfTheHttpParts"></a>Order of the HTTP parts
+## Order of the HTTP parts
 
 The publication method needs to support any HTTP part order. One cannot expect for instance that the JSON part ```messageToPublish``` be the first HTTP part to be received. There are two reason for this:
 - Several HTTP client do not give control on the order of the HTTP parts

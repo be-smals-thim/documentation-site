@@ -1,4 +1,8 @@
-# Onboarding process to become a Document Sender
+---
+title: Onboarding process to become a Document Sender
+sidebar_label: Onboarding
+---
+
 ![Diagram: DocSender onboarding process](../media/docSenderOnboardingProcess.png)
 
 ## DocSender initial request

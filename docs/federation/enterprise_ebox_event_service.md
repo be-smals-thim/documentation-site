@@ -1,11 +1,14 @@
+---
+title: Enterprise Ebox Event Service integration
+sidebar_label: EES
+---
 
-## EES Enterprise integration
 
-### Integration tips
+## Integration tips
 
 We strongly recommend an asynchronous implementation with retry so that the DP  is not directly impacted by errors of the EES. Event are important so we cannot simply ignore them because they cannot be send.
 
-### Example input
+## Example input
 
 ´´´:json
 [
@@ -23,6 +26,6 @@ We strongly recommend an asynchronous implementation with retry so that the DP  
 
 ### Technical Information
 
-- [EEES Open Api 2 Spec](../openapi/ebox-enterprise-event-api-1.1.1.yaml)
+- [EEES Open Api 2 Spec](../spec/specifications.md#Enterprise Ebox Event Service)
 - [EEES Endpoint ACC](https://public.int.fedservices.be/EventServices/Ebox/enterprise/document/events)
 - [EEES Endpoint PRD](https://public.fedservices.be/EventServices/Ebox/enterprise/document/events)
