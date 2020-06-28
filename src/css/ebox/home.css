@@ -12,7 +12,7 @@
     background-size: cover;
 }
 .hero.hero--primary:after {
-    background: linear-gradient(to right,rgba(1,137,67,.40) 0,rgba(37,116,169,.40) 100%);
+    background: #111111CC;
     display: block;
     content: '';
     position: absolute;

@@ -26,11 +26,23 @@
 .features {
   display: flex;
   align-items: center;
-  padding: 2rem 0;
+  padding: 2rem;
   width: 100%;
 }
 
 .featureImage {
   height: 200px;
   width: 200px;
+}
+
+.featureBox {
+  padding: 2rem;
+}
+
+.featureBox h3{
+    color:#6d6d6d
+}
+
+.featureBox p{
+  padding-right: 1rem;
 }

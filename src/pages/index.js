@@ -8,36 +8,66 @@ import styles from './styles.module.css';
 
 const features = [
   {
-    title: <>Deep into our documentation</>,
-    imageUrl: 'img/icon_doc.svg',
+    title: <>Strong Authentication</>,
+    // imageUrl: 'img/icon_doc.svg',
     description: (
       <>
-          Visit the <code>docs</code> directory.
+        e-Box allows all actors of society to exchange messages using Belgium's official authentication mechanism. In so doing you know that you are reaching who you which to reach.
+        <br/>
+        <br/>
+        Companies can be reached just by knowing theire CBE identifier, citizen by knowing theire NRN.
+        This gives e-Box messages a stronger legal backing that common electronic exchange systems like eMail.
       </>
     ),
   },
   {
-    title: <>Stay informed with our blog</>,
-    imageUrl: 'img/icon_blog.svg',
+    title: <>Auditable</>,
+    // imageUrl: 'img/icon_blog.svg',
     description: (
       <>
-        Visite our blog to saty informed or to increase your knowledge of our product.
+        When sending a Messages, it is sometime important to know what has happened to this messages.
+        e-Box provides methods to retrieve the Read Status of any Messages.
+        Inquiries can be performed upon request to review activities arround the Messages.
       </>
     ),
   },
+  {
+    title: <>Decentralized & Confidential</>,
+    // imageUrl: 'img/icon_blog.svg',
+    description: (
+      <>
+        Confidentiallity in e-Box is tunable, but at it's highest setting, your Messages reach theire destination
+        without ever passing through third party servers.
+        <br/>
+        <br/>
+        Through it's dual integration profiles, e-Box offers
+        the choice to Senders to either send Messages to an existing Message Registry or setup theire own Message
+        Registry.
+      </>
+    ),
+  },
+  // {
+  //   title: <>Mail Notification</>,
+  //   // imageUrl: 'img/icon_blog.svg',
+  //   description: (
+  //     <>
+  //       Let's face it, most user will rarely have to go to e-Box, users can therefore be informed by eMail of any new Messages.
+  //     </>
+  //   ),
+  // },
 ];
 
 function Feature({imageUrl, title, description}) {
   const imgUrl = useBaseUrl(imageUrl);
   return (
-    <div className={classnames('col col--6 text--center', styles.feature)}>
+    <div className={classnames('col col--4 text--left', styles.feature, styles.featureBox)}>
       {imgUrl && (
         <div className="text--center">
           <img className={styles.featureImage} src={imgUrl} alt={title} />
         </div>
       )}
       <h3>{title}</h3>
-      <p>{description}</p>
+      <p >{description}</p>
     </div>
   );
 }
@@ -59,8 +89,7 @@ function Home() {
                 'button button--outline button--secondary button--lg',
                 styles.getStarted,
               )}
-              to={useBaseUrl('docs/doc1')}>
-              Learn how to use our application <i class="fas fa-long-arrow-alt-right ml-2"></i>
+              to={useBaseUrl('docs/introduction')}>Get Started!<i class="fas fa-long-arrow-alt-right ml-2"></i>
             </Link>
           </div>
         </div>

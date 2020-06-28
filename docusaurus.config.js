@@ -8,8 +8,8 @@
  */
 
 module.exports = {
-  title: 'e-box enterprise Integration Site',
-  tagline: 'Integrate',
+  title: 'e-Box Technical Documentation Site',
+  tagline: "Reach Belgium's Enterprises and Citizens through the official channels.",
   url: 'https://ebox.github.io',
   baseUrl: '/',
   favicon: 'img/favicon.ico',
@@ -25,6 +25,7 @@ module.exports = {
       links: [
         {to: 'docs/introduction', label: 'Documentation', position: 'right'},
         {to: 'blog', label: 'Blog', position: 'right'},
+        {href: "https://github.com/e-Box-Enterprise-Belgium", label:"Github", position: 'right'}
       ],
     },
     footer: {

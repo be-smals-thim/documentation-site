@@ -26,9 +26,9 @@
 
 .navbar {
     background-color: transparent;
-    background-image: url('/img/bg-birds.jpg');
+    /*background-image: url('/img/bg-birds.jpg');*/
     background-position: 30% 29%;
-    background-repeat: no-repeat;
+    /*background-repeat: no-repeat;*/
     background-size: cover;
     position: relative;
     height: var(--ifm-navbar-height-ebox);

@@ -3,9 +3,8 @@ id: introduction
 title: Integrating with e-Box
 ---
 
-# Tools & Tricks to integrate with e-Box Enterprise
  
-An unofficial set of tools that helps with integration with [https://www.eboxenterprise.be](https://www.eboxenterprise.be) site.
+A set of tools that helps with integration with [https://www.eboxenterprise.be](https://www.eboxenterprise.be) site.
 
 - [Integration as Document Consumer](dc/document_consumer.md)
 - [Integration as Document Sender](ds/document_sender.md)
