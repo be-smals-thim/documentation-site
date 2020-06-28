@@ -3,7 +3,7 @@ title: Onboarding process to become a Document Sender
 sidebar_label: Onboarding
 ---
 
-![Diagram: DocSender onboarding process](../media/docSenderOnboardingProcess.png)
+![Diagram: DocSender onboarding process](/doc_media/docSenderOnboardingProcess.png)
 
 ## DocSender initial request
 In practice, a new e-Box integration request can be sent to [eBoxIntegration@smals.be](mailto:eBoxIntegration@smals.be). The first mail should explain in a high-level way what is expected as a new e-Box DocSender, for which business/use cases, a first idea of the volume (number of documents sent, moment of possible load peaks…) and the expected planning. 

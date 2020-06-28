@@ -3,7 +3,7 @@ title: Onboarding process to become a Document Sender
 sidebar_label: Onboarding
 ---
 
-![Diagram: DocConsumer onboarding process](../media/docConsumerOnboardingProcess.png)
+![Diagram: DocConsumer onboarding process](/doc_media/docConsumerOnboardingProcess.png)
 
 ## Onboarding form request
 To become a new e-Box Enterprise DocConsumer, your enterprise needs to send the following documents to [eBoxIntegration@smals.be](mailto:eBoxIntegration@smals.be).

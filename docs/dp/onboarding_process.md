@@ -3,7 +3,7 @@ title: Onboarding process to become a Document Provider
 sidebar_label: Onboarding
 ---
 
-![Diagram: DocProvider onboarding process](../media/docProviderOnboardingProcess.png)
+![Diagram: DocProvider onboarding process](/doc_media/docProviderOnboardingProcess.png)
 
 ## DocProvider initial request
 First you can contact [eBoxIntegration@smals.be](mailto:eBoxIntegration@smals.be) in order to explain in a high-level way what is expected with you future e-Box integration as new DocProvider, for which business/use cases, and a first idea of the volume (number of provided documents) and the expected planning. 
