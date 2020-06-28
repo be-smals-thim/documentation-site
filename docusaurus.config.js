@@ -10,11 +10,11 @@
 module.exports = {
   title: 'e-Box Technical Documentation Site',
   tagline: "Reach Belgium's Enterprises and Citizens through the official channels.",
-  url: 'https://e-Box-Enterprise-Belgium.github.io',
-  baseUrl: '/documentation-site/',
+  url: 'https://ebox.github.io',
+  baseUrl: '/',
   favicon: 'img/favicon.ico',
-  organizationName: 'e-Box-Enterprise-Belgium', // Usually your GitHub org/user name.
-  projectName: 'documentation-site', // Usually your repo name.
+  organizationName: 'ebox', // Usually your GitHub org/user name.
+  projectName: 'eboxenterprise-integration-site', // Usually your repo name.
   themeConfig: {
     disableDarkMode: true,
     navbar: {
@@ -92,7 +92,7 @@ module.exports = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl:
-            'https://github.com/e-Box-Enterprise-Belgium/documentation-site/edit/master/',
+            'https://github.com/be-smals-thim/documentation-site/edit/master/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
