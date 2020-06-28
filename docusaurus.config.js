@@ -10,11 +10,11 @@
 module.exports = {
   title: 'e-Box Technical Documentation Site',
   tagline: "Reach Belgium's Enterprises and Citizens through the official channels.",
-  url: 'https://ebox.github.io',
-  baseUrl: '/',
+  url: 'https://e-Box-Enterprise-Belgium.github.io',
+  baseUrl: '/documentation-site/',
   favicon: 'img/favicon.ico',
-  organizationName: 'ebox', // Usually your GitHub org/user name.
-  projectName: 'eboxenterprise-integration-site', // Usually your repo name.
+  organizationName: 'e-Box-Enterprise-Belgium', // Usually your GitHub org/user name.
+  projectName: 'documentation-site', // Usually your repo name.
   themeConfig: {
     disableDarkMode: true,
     navbar: {
