@@ -84,6 +84,7 @@ module.exports = {
       copyright: `Copyright © ${new Date().getFullYear()}  \tRijksdienst voor Sociale Zekerheid. Office National de Sécurité Sociale. Landesamt für soziale Sicherheit`,
     },
   },
+
   presets: [
     [
       '@docusaurus/preset-classic',
@@ -91,7 +92,7 @@ module.exports = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl:
-            'https://github.com/be-smals-thim/eboxenterprise-integration-site/edit/master/',
+            'https://github.com/e-Box-Enterprise-Belgium/documentation-site/edit/master/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
