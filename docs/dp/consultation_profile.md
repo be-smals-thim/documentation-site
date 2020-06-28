@@ -47,7 +47,7 @@ In the e-Box services, CBE numbers must be encoded in 10 digits.
 
 The following resources expand a bit on the subject:
 
-- [Java Example of an Introspect](../examples/ouath-introspect)
+- [Java Example of an Introspect](https://github.com/e-Box-Enterprise-Belgium/examples/tree/master/ouath-introspect)
 
 ### Scopes and endpoints mapping
 

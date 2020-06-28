@@ -106,7 +106,7 @@ Also you cannot let a ``messageTypeId`` and a ``senderApplicationId`` that are u
 
 ## <a id="getToken"></a>Getting an Oauth Token for publication
 
-The [oauth introspect example](../examples/ouath-introspect) shows how an Oauth token can be retrieved.
+The [oauth introspect example](https://github.com/e-Box-Enterprise-Belgium/examples/tree/master/ouath-introspect) shows how an Oauth token can be retrieved.
 You have to request your AccessToken to the Authorization Server.
 The ``GetAccessTokenV3.getAccessToken()`` method is the one responsible of getting the token.
 
@@ -132,7 +132,7 @@ Once you have got your token, you can call a method using one of these endpoints
 The order of HTTP parts is arbitrary, each part being linked to its associated meta-data by the ``httpPartName`` property of the publication payload. This allows for end to end streaming on the Document Sender side. See the [Publication Profile Documentation for more information](../dp/publication_profile.md#OrderOfTheHttpParts).
 
 ## Examples with Postman
-If you use Postman, you might be interested in a [Postman publication examples collection](../examples/postman/e-Box%20Enterprise%20REST%20Publication%20examples.postman_collection.json).
+If you use Postman, you might be interested in a [Postman publication examples collection](https://github.com/e-Box-Enterprise-Belgium/examples/tree/master/postman/e-Box%20Enterprise%20REST%20Publication%20examples.postman_collection.json).
 After importing that collection,
 - Paste your token in the Authorization tab in the menu to edit the collection,
 - Replace the ``upfile1`` to ``upfile6`` in the body of the requests with a file in your desktop,

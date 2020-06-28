@@ -1,5 +1,5 @@
 ---
-title: Implementing the Document Provider Publication Profile
+title: Implementing the Publication Profile
 sidebar_label: Publication Profile
 ---
 

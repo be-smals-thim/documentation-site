@@ -9,7 +9,7 @@ So a Document Consumer can not only consult his messages but also reference data
 The ```/publishMessage``` method is available only for [Document Sender](../ds/document_sender.md) and [Document Provider](../dp/document_provider.md).
 
 ## Getting an Oauth Token for consultation
-The [oauth introspect example](../examples/ouath-introspect) shows how an Oauth token can be retrieved.
+The [oauth introspect example](https://github.com/e-Box-Enterprise-Belgium/examples/tree/master/ouath-introspect) shows how an Oauth token can be retrieved.
 You have to request your AccessToken to the Authorization Server.
 The ``GetAccessTokenV3.getAccessToken()`` method is the one responsible of getting the token.
 
