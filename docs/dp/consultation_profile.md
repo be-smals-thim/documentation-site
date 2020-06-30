@@ -8,8 +8,16 @@ In order to be a Document Provider one MUST implement a Message Registry Service
 ## Introspect of an e-Box Enterprise Oauth Token
 
 The DP methods are secured by Oauth2 tokens. Introspecting these token can be tricky since the introspect endpoint security is quite high using oauth itself to secure the call to the ``/introspect`` endpoint.
-
 The introspect endpoint return several information, the most important being the organization CBE which is the unique identifier of an organization and of it's e-Box.
+
+<table>
+<tr><td colspan="2" align="center">ACC</td></tr>
+<tr><td>Introspect</td> <td>https://services-acpt.socialsecurity.be/REST/oauth/v3/introspect</td></tr>
+<tr><td>Audience</td> <td>https://oauthacc.socialsecurity.be</td></tr>
+<tr><td colspan="2" align="center">PROD</td></tr>
+<tr><td>Introspect</td> <td>https://services.socialsecurity.be/REST/oauth/v3/introspect</td></tr>
+<tr><td>Audience</td> <td>https://oauth.socialsecurity.be</td></tr>
+</table>
 
 Here is an example introspect payload.
 
