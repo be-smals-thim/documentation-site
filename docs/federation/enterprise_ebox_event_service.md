@@ -1,6 +1,6 @@
 ---
-title: Enterprise Ebox Event Service integration
-sidebar_label: EES
+title: Ebox Event Service integration
+sidebar_label: Ebox Event Service
 ---
 
 

@@ -75,11 +75,11 @@ module.exports = {
       //     ],
       //   },
       // ],
-      logo: {
-        alt: 'RSZ/ONSS Logo',
-        src: 'img/logo-be.svg',
-        href: 'https://www.belgium.be/',
-      },
+      // logo: {
+      //   alt: 'RSZ/ONSS Logo',
+      //   src: 'img/logo-be.svg',
+      //   href: 'https://www.belgium.be/',
+      // },
       // Please do not remove the credits, help to publicize Docusaurus :)
       copyright: `Copyright © ${new Date().getFullYear()}  \tRijksdienst voor Sociale Zekerheid. Office National de Sécurité Sociale. Landesamt für soziale Sicherheit`,
     },
