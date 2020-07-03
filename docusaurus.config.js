@@ -9,7 +9,7 @@
 
 module.exports = {
   title: 'e-Box Technical Documentation Site',
-  tagline: "Reach Belgium's Enterprises and Citizens through the official channels.",
+  tagline: "Reach Belgium's Enterprises through the official channels.",
   url: 'https://ebox.github.io',
   baseUrl: '/',
   favicon: 'img/favicon.ico',
