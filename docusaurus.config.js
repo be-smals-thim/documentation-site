@@ -10,7 +10,7 @@
 module.exports = {
   title: 'e-Box Technical Documentation Site',
   tagline: "Reach Belgium's Enterprises through the official channels.",
-  url: 'https://eboxenterprise.be',
+  url: 'https://dev.eboxenterprise.be',
   baseUrl: '/',
   favicon: 'img/favicon.ico',
   organizationName: 'ebox', // Usually your GitHub org/user name.
