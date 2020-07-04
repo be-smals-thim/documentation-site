@@ -9,10 +9,13 @@
 
 module.exports = {
   someSidebar: {
-    "Introduction":['introduction'],
+    "Introduction":[
+      'introduction',
+      'common/glossary',
+    ],
     "Document Sender":[
         'ds/document_sender',
-        'ds/onboarding_process',
+        'ds/onboarding_process'
     ],
     "Document Provider":[
       'dp/document_provider',
@@ -28,8 +31,7 @@ module.exports = {
       'federation/enterprise_ebox_event_service',
       'federation/federation_ws'
     ],
-    "Other":[
-      "common/glossary",
+    "Authentication":[
       "common/x509_certificate",
     ],
     "Specs":[

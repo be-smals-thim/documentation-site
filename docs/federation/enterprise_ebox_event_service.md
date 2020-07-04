@@ -10,7 +10,7 @@ We strongly recommend an asynchronous implementation with retry so that the DP  
 
 ## Example input
 
-´´´:json
+```json
 [
     {
       "eventType": "documentExpirationAlert",
@@ -22,10 +22,10 @@ We strongly recommend an asynchronous implementation with retry so that the DP  
       "registeredMail": false
     }
   ]
-´´´
+```
 
 ### Technical Information
 
-- [EEES Open Api 2 Spec](../spec/specifications.md#Enterprise Ebox Event Service)
+- [EEES Open Api 2 Spec](../spec/specifications.md#eesOpenApiSpec)
 - [EEES Endpoint ACC](https://public.int.fedservices.be/EventServices/Ebox/enterprise/document/events)
 - [EEES Endpoint PRD](https://public.fedservices.be/EventServices/Ebox/enterprise/document/events)
