@@ -13,7 +13,7 @@ const features = [
     description: (
       <>
         e-Box allows all actors of society to exchange messages using Belgium's official authentication mechanism.
-        This allows to always know who sending and receiving messages.
+        This allows to always know who is sending and receiving messages.
         <br/>
         <br/>
         Companies can be reached just by knowing their CBE identifier, citizen by knowing their NRN.
