@@ -1,3 +1,7 @@
 .footer.footer--dark {
     --ifm-footer-background-color: var(--ifm-color-primary-darker);
 }
+
+.footer__link-item:hover{
+    color:white!important;
+}

@@ -30,58 +30,49 @@ module.exports = {
     },
     footer: {
       style: 'dark',
-      // links: [
-      //   {
-      //     title: 'Docs',
-      //     items: [
-      //       {
-      //         label: 'Style Guide',
-      //         to: 'docs/doc1',
-      //       },
-      //       {
-      //         label: 'Second Doc',
-      //         to: 'docs/doc2',
-      //       },
-      //     ],
-      //   },
-      //   {
-      //     title: 'Community',
-      //     items: [
-      //       {
-      //         label: 'Stack Overflow',
-      //         href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-      //       },
-      //       {
-      //         label: 'Discord',
-      //         href: 'https://discordapp.com/invite/docusaurus',
-      //       },
-      //     ],
-      //   },
-      //   {
-      //     title: 'Social',
-      //     items: [
-      //       {
-      //         label: 'Blog',
-      //         to: 'blog',
-      //       },
-      //       {
-      //         label: 'GitHub',
-      //         href: 'https://github.com/facebook/docusaurus',
-      //       },
-      //       {
-      //         label: 'Twitter',
-      //         href: 'https://twitter.com/docusaurus',
-      //       },
-      //     ],
-      //   },
-      // ],
-      // logo: {
-      //   alt: 'RSZ/ONSS Logo',
-      //   src: 'img/logo-be.svg',
-      //   href: 'https://www.belgium.be/',
-      // },
-      // Please do not remove the credits, help to publicize Docusaurus :)
-      copyright: `Copyright © ${new Date().getFullYear()}  \tRijksdienst voor Sociale Zekerheid. Office National de Sécurité Sociale. Landesamt für soziale Sicherheit`,
+      links: [
+        {
+          title: 'e-Box ecosystem',
+          items: [
+            {
+              label: 'Github',
+              href: 'https://github.com/e-Box-Enterprise-Belgium',
+            },
+            {
+              label: 'Info site',
+              href: 'https://info.eboxenterprise.be',
+            },
+          ],
+        },
+        {
+          title: 'Information',
+          items: [
+            {
+              label: 'Conditions for re-use (in french)',
+              href: 'https://info.eboxenterprise.be/fr/open-data.html',
+              language:"french"
+            },
+            {
+              label: 'Accessibility Statement',
+              href: 'https://www.onssrszlss.fgov.be/sites/default/files/binaries/assets/linkfooter/accessibility_statement_nsso.pdf',
+            },
+            {
+              label: 'Personal Data',
+              href: 'https://info.eboxenterprise.be/en/documents/pdf/gdpr-enterprise-noss-E.pdf',
+            },
+          ],
+        },
+        {
+          title: 'Contact',
+          items: [
+            {
+              label: 'Contact form',
+              href: 'https://www.socialsecurity.be/site_fr/employer/general/contactcenter/index.htm?targetApplics=eboxEntreprise',
+            },
+          ],
+        },
+      ],
+      copyright: `© socialsecurity.be`,
     },
   },
 
