@@ -3,14 +3,16 @@ title: Becoming a Document Sender
 sidebar_label: Introduction
 ---
 
-Publication happen through the ```/publishMessage``` method of the [e-Box RESTful API](../spec/specifications.md)
-The method uses a multipart HTTP POST to send up to 6 documents attached to a an e-Box Message. The API fully support [end to end streaming](#EndToEndStreamingConsiderations).
+Publication happen through the ```/publishMessage``` method of the [e-Box RESTful API](../spec/specifications.md).
+This method uses a multipart HTTP POST to send up to 6 documents attached to a an e-Box Message.
+The API fully support [end to end streaming](#EndToEndStreamingConsiderations).
 
 The authentication has to be done via a [OAuth2 token request](#getToken). See the [Document Sender onboarding process](onboarding_process.md) to configure your enterprise as a new OAuth client.
 
 ## Minimal publication example
 
-The following is pretty much the simplest publication request that can be made. It is comprised of the following HTTP parts 
+The following is pretty much the simplest publication request that can be made. It is comprised of the following HTTP parts:
+
 1) ``messageToPublish``: This part contains the meta information of the message.
 Example:
 ```json
@@ -38,9 +40,11 @@ messageToPublish: {
 ```
 
 2) ``upfile1``: This part MUST contain the binary and basic meta information of the document. It is a standard HTTP binary file upload part which needs to specify the following information:
-    - data stream: the raw data of the content
-    - filename: the file name of the document
-    - Content-Type: the [MIME type](https://www.iana.org/assignments/media-types/media-types.xhtml) of the document
+
+- data stream: the raw data of the content
+- filename: the file name of the document
+- Content-Type: the [MIME type](https://www.iana.org/assignments/media-types/media-types.xhtml) of the document
+
 ```
 Content-Disposition: form-data; name="upfile1
 "; filename="MyTestDocument.pdf"
@@ -49,17 +53,17 @@ Content-Type: application/pdf
 (data)
 ``` 
 
-**Note**: The ``upfile1`` part and the extra meta information of the document are linked together through ``"httpPartName": "upfile1"`` in the ``messageToPublish`` part,
+**Note**: The ``upfile1`` part and the extra meta information of the document are linked together through ``"httpPartName": "upfile1"`` in the ``messageToPublish`` part.
 
 ### Response
 
-Provided that the request is correct one can expect a ``201`` status code to be issued with our without an additional information ``code`` in the JSON response body.
+Provided that the request is correct, one can expect a ``201`` status code to be issued with our without an additional information ``code`` in the JSON response body.
 
 ### NO_DIGITAL_USER response code
 
-This code allows the Document Sender to know that the publication he just made was to a recipient that never visited his e-Box. 
-
-This is the preferred method for a Sender to determine if the User uses his e-Box or not. An alternative to this is to use the [e-Box Federation WS](../federation/federation_ws.md) but this requires to integrate with another web service and does not fit the "e-Box First" philosophy we are trying to push. 
+This code allows the Document Sender to know that the publication was to a recipient that never opened his e-Box.
+This is the preferred method for a Sender to determine if the User uses his e-Box or not.
+An alternative to this is to use the [e-Box Federation WS](../federation/federation_ws.md) but this requires to integrate with another web service and does not fit the "e-Box First" philosophy we are trying to push. 
 
 ### For the attention of
 
@@ -129,7 +133,7 @@ Once you have got your token, you can call a method using one of these endpoints
 
 ## <a id="EndToEndStreamingConsiderations"></a>End to end Streaming Considerations
 
-The order of HTTP parts is arbitrary, each part being linked to its associated meta-data by the ``httpPartName`` property of the publication payload. This allows for end to end streaming on the Document Sender side. See the [Publication Profile Documentation for more information](../dp/publication_profile.md#OrderOfTheHttpParts).
+The order of HTTP parts is arbitrary, each part being linked to its associated meta-data by the ``httpPartName`` property of the publication payload. This allows for end to end streaming on the Document Sender side. See the [Publication Profile Documentation](../dp/publication_profile.md#OrderOfTheHttpParts) for more information.
 
 ## Examples with Postman
 If you use Postman, you might be interested in a [Postman publication examples collection](https://github.com/e-Box-Enterprise-Belgium/examples/tree/master/postman/e-Box%20Enterprise%20REST%20Publication%20examples.postman_collection.json).

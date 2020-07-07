@@ -12,7 +12,7 @@ The Document Provider has some responsibilities toward te overall e-Box enterpri
 - Inform the e-Box Federation of e-Box activities like new messages or messages being read.
 - Follow latest guidelines to ensure safeguard the end user experience.
 
-[Document Provider onboarding process](onboarding_process.md)
+Before starting the technical integration as Document Provider, make sure to complemente the [Document Provider onboarding process](onboarding_process.md).
 
 # <a id="MessageRegistryService"></a>Message Registry Service
 
