@@ -10,7 +10,7 @@
 module.exports = {
   title: 'e-Box Technical Documentation Site',
   tagline: "Reach Belgium's Enterprises through the official channels.",
-  url: 'https://ebox.github.io',
+  url: 'https://dev.eboxenterprise.be',
   baseUrl: '/',
   favicon: 'img/favicon.ico',
   organizationName: 'ebox', // Usually your GitHub org/user name.
@@ -75,11 +75,11 @@ module.exports = {
       //     ],
       //   },
       // ],
-      logo: {
-        alt: 'RSZ/ONSS Logo',
-        src: 'img/logo-be.svg',
-        href: 'https://www.belgium.be/',
-      },
+      // logo: {
+      //   alt: 'RSZ/ONSS Logo',
+      //   src: 'img/logo-be.svg',
+      //   href: 'https://www.belgium.be/',
+      // },
       // Please do not remove the credits, help to publicize Docusaurus :)
       copyright: `Copyright © ${new Date().getFullYear()}  \tRijksdienst voor Sociale Zekerheid. Office National de Sécurité Sociale. Landesamt für soziale Sicherheit`,
     },
@@ -96,6 +96,11 @@ module.exports = {
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
+        },
+        sitemap:{
+          cacheTime: 600 * 1000, // 600 sec - cache purge period
+          changefreq: 'weekly',
+          priority: 0.5,
         },
       },
     ],

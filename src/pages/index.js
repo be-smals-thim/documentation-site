@@ -12,10 +12,11 @@ const features = [
     // imageUrl: 'img/icon_doc.svg',
     description: (
       <>
-        e-Box allows all actors of society to exchange messages using Belgium's official authentication mechanism. In so doing you know that you are reaching who you which to reach.
+        e-Box allows all actors of society to exchange messages using Belgium's official authentication mechanism.
+        This allows to always know who sending and receiving messages.
         <br/>
         <br/>
-        Companies can be reached just by knowing theire CBE identifier, citizen by knowing theire NRN.
+        Companies can be reached just by knowing their CBE identifier, citizen by knowing their NRN.
         This gives e-Box messages a stronger legal backing that common electronic exchange systems like eMail.
       </>
     ),
@@ -26,8 +27,8 @@ const features = [
     description: (
       <>
         When sending a Messages, it is sometime important to know what has happened to this messages.
-        e-Box provides methods to retrieve the Read Status of any Messages.
-        Inquiries can be performed upon request to review activities arround the Messages.
+        e-Box provides methods to retrieve the Read Status of any Message.
+        Inquiries can be performed to review activities around the Messages.
       </>
     ),
   },
@@ -36,13 +37,13 @@ const features = [
     // imageUrl: 'img/icon_blog.svg',
     description: (
       <>
-        Confidentiallity in e-Box is tunable, but at it's highest setting, your Messages reach theire destination
+        Confidentiality in e-Box is tunable, but at it's highest setting, your Messages reach their destination
         without ever passing through third party servers.
         <br/>
         <br/>
         Through it's dual integration profiles, e-Box offers
-        the choice to Senders to either send Messages to an existing Message Registry or setup theire own Message
-        Registry.
+        the choice to Senders to either send Messages to an existing Message Registry or setup their own Message
+        Registry for maximum privacy guarantees.
       </>
     ),
   },
@@ -91,6 +92,13 @@ function Home() {
               )}
               to={useBaseUrl('docs/introduction')}>Get Started!<i class="fas fa-long-arrow-alt-right ml-2"></i>
             </Link>
+            {/*<Link*/}
+            {/*  className={classnames(*/}
+            {/*    'button button--outline button--secondary button--lg',*/}
+            {/*    styles.getStarted,*/}
+            {/*  )}*/}
+            {/*  to={'https://eboxenterprise.be'}>Go to e-Box<i class="fas fa-long-arrow-alt-right ml-2"></i>*/}
+            {/*</Link>*/}
           </div>
         </div>
       </header>
