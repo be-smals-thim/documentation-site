@@ -4,9 +4,9 @@ sidebar_label: Introduction
 ---
 
 Message consultation happen via a HTTP GET through all the methods that start with ```/ebox``` defined in the [e-Box RESTful API](../spec/specifications.md).
-This specification is available in the .yaml format.
+This specification is available in the ``.yaml`` format.
 So a Document Consumer can not only consult his messages but also reference data.
-The ```/publishMessage``` method is available only for [Document Sender](../ds/document_sender.md) and [Document Provider](../dp/document_provider.md).
+The ``/publishMessage`` method is available only for [Document Sender](../ds/document_sender.md) and [Document Provider](../dp/document_provider.md).
 
 ## Getting an Oauth Token for consultation
 The [oauth introspect example](https://github.com/e-Box-Enterprise-Belgium/examples/tree/master/ouath-introspect) shows how an Oauth token can be retrieved.

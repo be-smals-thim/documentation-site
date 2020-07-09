@@ -15,7 +15,8 @@ The request must be sent to [QuoVadis](mailto:info.be@quovadisglobal.com).
 Please pay attention to respect the expected format. It’s also important to have a distinct certificate for each work environment (Acceptance, Production).
 
 ## OAuth configuration
-The e-Box integration team validate your request and configure your enterprise as a new OAuth client.
+The e-Box integration team validates your request and configure your enterprise as a new OAuth client.
+They will also communicate you the client-ID.
 As a DocConsumer, you will get the necessary scopes to perform all the possible requests to manage your e-Box: 
 - **summary_own_ebox** (``scope:document:management:consult:ws-eboxrestentreprise:summaryownebox``) to get the summary of your e-Box; 
 - **messages_full** (``scope:document:management:consult:ws-eboxrestentreprise:messagesfull``) to get and perform authorized actions on all messages in your ebox;  

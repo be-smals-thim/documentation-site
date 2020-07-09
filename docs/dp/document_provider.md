@@ -3,7 +3,7 @@ title: Becoming a Document Provider
 sidebar_label: Introduction
 ---
 
-A Document Provider is the strongest e-Box integration that can be made as it allows to offer e-Box features to Users be it Senders or Consumers. As such it is also the most challenging, requiring integration to setup a [REST Web Service](../spec/specifications.md) that will integrate with several other Web Services of the federation.
+A Document Provider delivers Messages directly to Consumers. It offers the highest level of privacy but is the most challenging type of integration, requiring the setup of a [REST Web Service](../spec/specifications.md) that will integrate with several other Web Services of the federation.
 
 The Document Provider has some responsibilities toward te overall e-Box enterprise federation:
 
@@ -12,7 +12,7 @@ The Document Provider has some responsibilities toward te overall e-Box enterpri
 - Inform the e-Box Federation of e-Box activities like new messages or messages being read.
 - Follow latest guidelines to ensure safeguard the end user experience.
 
-[Document Provider onboarding process](onboarding_process.md)
+Before starting the technical integration as Document Provider, make sure to complemente the [Document Provider onboarding process](onboarding_process.md).
 
 # <a id="MessageRegistryService"></a>Message Registry Service
 
