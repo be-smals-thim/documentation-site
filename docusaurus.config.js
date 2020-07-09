@@ -17,6 +17,7 @@ module.exports = {
   projectName: 'eboxenterprise-integration-site', // Usually your repo name.
   themeConfig: {
     disableDarkMode: true,
+    sidebarCollapsible: false,
     navbar: {
       logo: {
         alt: 'Ebox Enterprise Integration Site',
@@ -27,6 +28,9 @@ module.exports = {
         {to: 'blog', label: 'Blog', position: 'right'},
         {href: "https://github.com/e-Box-Enterprise-Belgium", label:"Github", position: 'right'}
       ],
+    },
+    prism: {
+      theme: require('prism-react-renderer/themes/dracula'),
     },
     footer: {
       style: 'dark',
@@ -86,7 +90,7 @@ module.exports = {
             'https://github.com/be-smals-thim/documentation-site/edit/master/',
         },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: require.resolve('./src/css/custom.css')
         },
         sitemap:{
           cacheTime: 600 * 1000, // 600 sec - cache purge period

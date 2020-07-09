@@ -9,7 +9,7 @@ You can have a pretty display of the API by putting the file content in the [onl
 ## Message Registry Service
 - [2.1](/openapi/e-Box-Enterprise-swagger-v2.1-AP-Public.yaml)
 
-## <a id="eesOpenApiSpec"></a>Enterprise Ebox Event Service
+## Enterprise Ebox Event Service
 - [1.1.1](/openapi/ebox-enterprise-event-api-1.1.1.yaml)
 
 ## Ebox Enterprise Federation Service

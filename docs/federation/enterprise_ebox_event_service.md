@@ -26,6 +26,6 @@ We strongly recommend an asynchronous implementation with retry so that the DP  
 
 ### Technical Information
 
-- [EEES Open Api 2 Spec](../spec/specifications.md#eesOpenApiSpec)
+- [EEES Open Api 2 Spec](../spec/specifications.md#enterprise-ebox-event-service)
 - [EEES Endpoint ACC](https://public.int.fedservices.be/EventServices/Ebox/enterprise/document/events)
 - [EEES Endpoint PRD](https://public.fedservices.be/EventServices/Ebox/enterprise/document/events)

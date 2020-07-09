@@ -12,11 +12,11 @@ The introspect endpoint return several information, the most important being the
 Among the endpoints below, the back channel is the authentication endpoint that gives you your token.
 
 <table>
-<tr><td colspan="2" align="center">ACC</td></tr>
+<tr><td></td><td><strong>ACC</strong></td></tr>
 <tr><td>Back channel</td> <td>https://services-acpt.socialsecurity.be/REST/oauth/v3/token</td></tr>
 <tr><td>Introspect</td> <td>https://services-acpt.socialsecurity.be/REST/oauth/v3/introspect</td></tr>
 <tr><td>Audience</td> <td>https://oauthacc.socialsecurity.be</td></tr>
-<tr><td colspan="2" align="center">PROD</td></tr>
+<tr><td></td><td><strong>PROD</strong></td></tr>
 <tr><td>Back channel</td> <td>https://services.socialsecurity.be/REST/oauth/v3/token</td></tr>
 <tr><td>Introspect</td> <td>https://services.socialsecurity.be/REST/oauth/v3/introspect</td></tr>
 <tr><td>Audience</td> <td>https://oauth.socialsecurity.be</td></tr>

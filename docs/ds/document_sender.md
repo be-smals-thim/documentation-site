@@ -4,9 +4,9 @@ sidebar_label: Introduction
 ---
 
 Publication happen through the ```/publishMessage``` method of the [e-Box RESTful API](../spec/specifications.md)
-The method uses a multipart HTTP POST to send up to 6 documents attached to a an e-Box Message. The API fully support [end to end streaming](#EndToEndStreamingConsiderations).
+The method uses a multipart HTTP POST to send up to 6 documents attached to a an e-Box Message. The API fully support [end to end streaming](#end-to-end-streaming-considerations).
 
-The authentication has to be done via a [OAuth2 token request](#getToken). See the [Document Sender onboarding process](onboarding_process.md) to configure your enterprise as a new OAuth client.
+The authentication has to be done via a [OAuth2 token request](#getting-an-oauth-token-for-publication). See the [Document Sender onboarding process](onboarding_process.md) to configure your enterprise as a new OAuth client.
 
 ## Minimal publication example
 
@@ -104,7 +104,7 @@ messageToPublish: {
 The difference is in the ``recipient`` object. The ``eboxType`` becomes ``citizen`` and the ``eboxIdValue`` is the recipient SSIN.
 Also you cannot let a ``messageTypeId`` and a ``senderApplicationId`` that are used only for enterprise-to-enterprise publication.
 
-## <a id="getToken"></a>Getting an Oauth Token for publication
+## Getting an Oauth Token for publication
 
 The [oauth introspect example](https://github.com/e-Box-Enterprise-Belgium/examples/tree/master/ouath-introspect) shows how an Oauth token can be retrieved.
 You have to request your AccessToken to the Authorization Server.
@@ -127,7 +127,7 @@ Once you have got your token, you can call a method using one of these endpoints
 | Acceptance | ``https://services-acpt.socialsecurity.be/REST/ebox/enterprise/messageRegistry/v2/``|
 | Production | ``https://services.socialsecurity.be/REST/ebox/enterprise/messageRegistry/v2``      |
 
-## <a id="EndToEndStreamingConsiderations"></a>End to end Streaming Considerations
+## End to end Streaming Considerations
 
 The order of HTTP parts is arbitrary, each part being linked to its associated meta-data by the ``httpPartName`` property of the publication payload. This allows for end to end streaming on the Document Sender side. See the [Publication Profile Documentation for more information](../dp/publication_profile.md#OrderOfTheHttpParts).
 
