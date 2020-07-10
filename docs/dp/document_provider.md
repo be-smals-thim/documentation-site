@@ -1,6 +1,5 @@
 ---
 title: Becoming a Document Provider
-sidebar_label: Introduction
 ---
 
 A Document Provider delivers Messages directly to Consumers. It offers the highest level of privacy but is the most challenging type of integration, requiring the setup of a [REST Web Service](../spec/specifications.md) that will integrate with several other Web Services of the federation.

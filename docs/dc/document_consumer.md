@@ -1,6 +1,5 @@
 ---
 title: Becoming a Document Consumer
-sidebar_label: Introduction
 ---
 
 Message consultation happen via a HTTP GET through all the methods that start with ```/ebox``` defined in the [e-Box RESTful API](../spec/specifications.md).

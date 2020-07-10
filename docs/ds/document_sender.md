@@ -1,6 +1,5 @@
 ---
 title: Becoming a Document Sender
-sidebar_label: Introduction
 ---
 
 Publication happen through the ```/publishMessage``` method of the [e-Box RESTful API](../spec/specifications.md).

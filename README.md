@@ -13,7 +13,6 @@ Here is an example:
 ```---
 id: document_consumer_entry
 title: Becoming a Document Consumer
-sidebar_label: Introduction
 ---
 ``` 
 
