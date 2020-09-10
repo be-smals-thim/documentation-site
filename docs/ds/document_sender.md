@@ -155,7 +155,7 @@ There are some restrictions in our implementation of the service:
 - We do not support payment data.
 
 There is also a maximum length on some strings in a publication request:
-- The ``subject`` length is 400 characters maximum.
+- The ``subject`` length is 255 characters maximum.
 - The file name of uploaded files are 80 characters maximum.
-- The value given to business data are 256 characters maximum.
+- The value given to business data are 256 bytes maximum.
 - The ``name`` in a ``forTheAttentionOf`` object is 100 characters maximum.
