@@ -21,7 +21,8 @@ module.exports = {
       'dp/document_provider',
       'dp/onboarding_process',
       'dp/consultation_profile',
-      'dp/publication_profile'
+      'dp/publication_profile',
+      'dp/audit_trail'
     ],
     "Document Consumer":[
       'dc/document_consumer',
