@@ -1,4 +1,6 @@
-# Audit Trails: Requirements
+---
+title: Audit trails requirements
+---
 
 Every Document Provider has the right to define its own audit trails system. 
 The following document describes the minimum requirements on audit trail for each integration with e-Box Federated Enterprise. 
