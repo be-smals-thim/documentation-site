@@ -47,33 +47,33 @@ API_CALL_RESPONSE_CODE | API call HTTP response code (or generic error code in c
 API_CALL_DETAILS | API call details : see below
 
 ##### API call details: exemples
-* GET /ebox/messages 
-  * messageId
-* GET /ebox/messages/{messageId} messageId 
-  * paymentDate.paymentDataId
-* GET /ebox/messages/{messageId}/attachments 
-  * messageId
-  * attachment.<n>.attachmentId 
-  * attachment.<n>.mediaType 
-  * attachment.<n>.size 
-  * attachment.<n>.digest.digestValue 
-  * attachment.<n>.digest.digestMethod
-* GET /ebox/messages/{messageId}/attachments/{attachmentId}
-  * messageId 
-  * attachmentId 
-  * mediaType 
-  * size
-  * digest.digestValue digest.digestMethod
-* GET /ebox/messages/{messageId}/attachments/{attachmentId}/content 
-  * messageId
-  * attachmentId 
-  * contentId
-* GET /ebox/messages/{messageId}/paymentDate messageId
-  * paymentDataId
-* POST/publishMessage 
-  * originalMessageId 
-  * attachments.<n>.mediaType 
-  * attachments.<n>.size 
-  * attachments.<n>.digest.digestValue 
-  * attachments.<n>.digest.digestMethod 
-  * messageId (returned in response)
+- GET /ebox/messages 
+  - messageId
+- GET /ebox/messages/{messageId} messageId 
+  - paymentDate.paymentDataId
+- GET /ebox/messages/{messageId}/attachments 
+  - messageId
+  - attachment.{attachementId}.attachmentId 
+  - attachment.{attachementId}.mediaType 
+  - attachment.{attachementId}.size 
+  - attachment.{attachementId}.digest.digestValue 
+  - attachment.{attachementId}.digest.digestMethod
+- GET /ebox/messages/{messageId}/attachments/{attachmentId}
+  - messageId 
+  - attachmentId 
+  - mediaType 
+  - size
+  - digest.digestValue digest.digestMethod
+- GET /ebox/messages/{messageId}/attachments/{attachmentId}/content 
+  - messageId
+  - attachmentId 
+  - contentId
+- GET /ebox/messages/{messageId}/paymentDate messageId
+  - paymentDataId
+- POST/publishMessage 
+  - originalMessageId 
+  - attachments.{attachementId}.mediaType 
+  - attachments.{attachementId}.size 
+  - attachments.{attachementId}.digest.digestValue 
+  - attachments.{attachementId}.digest.digestMethod 
+  - messageId (returned in response)
