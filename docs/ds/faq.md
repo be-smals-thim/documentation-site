@@ -2,9 +2,8 @@
 title: FAQ
 ---
 
-## Errors on service
+### I get a DIGEST_DO_NOT_MATCH code when publishing with a Digest
 
-- Issue with the digest, I get the following error
 ```json
 {
   "code":"DIGEST_DO_NOT_MATCH", 
