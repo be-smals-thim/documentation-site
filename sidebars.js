@@ -16,7 +16,7 @@ module.exports = {
     "Document Sender":[
         'ds/document_sender',
         'ds/onboarding_process',
-        'FAQ'
+        'ds/faq'
     ],
     "Document Provider":[
       'dp/document_provider',
