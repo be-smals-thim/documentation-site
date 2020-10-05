@@ -2,6 +2,13 @@
 title: Glossary
 ---
 
+# Enterprise
+An enterprise is identied by the CBE numer and the quality.
+To use e-Box Enterprise product, the quality is equal to 'ENTERPRISE'.
+The CBE number is registered at Crossroads Bank for Enterprises. 
+Upon registration in the CBE each entity receives a company registration number. The use of this number is required by law. The company registration number is a unique identification number consisting of 10 digits, starting with 0 or 1.
+In our e-Box product, the CBE number has to imperatively start with '0' or '1' (especially '0', it is important to mention it), a check is performed.
+
 ## Sender
 The organisation, the application and the message types are part of the reference data and are relative to the sender organisation that can publish messages
 
@@ -51,3 +58,9 @@ You can provide a different logo for each supported language.
 *_Messagetype:_
   `YearlyVacationAccountExtract` (in FR: *Disponibilité de l’extrait de compte*)
   `YearlyVacationFiscalCertificate` (in FR: *Disponibilité fiche fiscale*)
+
+
+## Recipient
+In a bidrectional scenario, we define a sender and a recipient e-box.
+The description above was done for a first message when an institution sends a message to an enterprise.
+When the enterprise replies, the sender is an enterprise and the recipient is also an entreprise representing the institution.
