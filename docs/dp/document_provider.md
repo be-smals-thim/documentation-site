@@ -40,3 +40,7 @@ The following events must be sent in the following scenarios:
 Notifications are eMail that are sent once per day with a summary of the event's received. The readDocument event is here
 to prevent us sending Notifications about Messages that have been read by the User between the time the unread message 
 Event was sent and the time the Notification is sent to the User.
+
+# Audit Trail
+Audit trail proves that a publication and consultation of documents is traceable. This step is mandatory to be on-boarded as document provider.
+[More information](audit_trail.md)
