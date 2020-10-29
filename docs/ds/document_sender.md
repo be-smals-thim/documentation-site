@@ -2,6 +2,9 @@
 title: Becoming a Document Sender
 ---
 
+There are two ways to integrate: through SOAP or through REST. 
+The REST integration is the new and privileged way but the [SOAP specifications](../spec/specifications_SOAP.md) are still available.
+
 Publication happen through the ```/publishMessage``` method of the [e-Box RESTful API](../spec/specifications.md).
 This method uses a multipart HTTP POST to send up to 6 documents attached to a an e-Box Message.
 The API fully support [end to end streaming](#end-to-end-streaming-considerations).
