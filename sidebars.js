@@ -37,7 +37,8 @@ module.exports = {
       "common/x509_certificate",
     ],
     "Specs":[
-      "spec/specifications"
+      "spec/specifications",
+      "spec/specifications_SOAP"
     ]
   },
 };
