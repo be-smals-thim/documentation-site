@@ -111,7 +111,7 @@ The following endpoints are MUST have significant cache control headers.
 - ``/referenceData/senderOrganization/*``
 - ``/referenceData/senderApplication/*``
 
-We recommend a 2 day fixed cache with non blocking background refresh, but more advanced options can be chosen.
+We recommend a 2 day fixed cache with non-blocking background refresh, but more advanced options can be chosen.
 
 e.g: ``Cache-Control: public, no-transform, proxy-revalidate, max-age=86400``
 
@@ -132,7 +132,7 @@ All search criteria are to be applied in conjunction, meaning all messages retur
 
 Criteria which match no message should return a 200 HTTP status with an empty list of messages. This even if the case when 
 incoherent criteria are provided (like a receivedAfter=2060-03-05). 400 status code MUST and only can be returned with syntactically
-incorrect criteria or if q is provided without qlang.  
+incorrect criteria or if ``q`` is provided without ``qlang``.  
 
 
 ### Text search feature
@@ -140,40 +140,40 @@ incorrect criteria or if q is provided without qlang.
 The Text search feature allows substring search in all visible textual information related to a message in the language of the user. 
 Search excludes research in the document or body content themselves.
 
-The text search is driven by the q and qlang fields, which must both be provided for the text search to work. 
-Possible qlang values are:
-- fr
-- nl
-- de
+The text search is driven by the ``q`` and ``qlang`` fields, which must both be provided for the text search to work. 
+Possible ``qlang`` values are: ``fr``,``nl``, ``de``
 
-**Note:**  2.1 and 2.2 specification do not contain the enum of values, this will be addressed in subsequent versions at which
-point the list provided here will be removed 
+**Note:**  Current API specification at the time of writing do not contain the enum of values, 
+this will be addressed in subsequent versions at which point the list provided here will be removed 
 
-The q parameter represent a portion of text to be found in all "visible textual information". The following API fields are searched 
-based on q and qlang.
+The ``q`` parameter represent a portion of text to be found in all "visible textual information". The following API fields are searched 
+based on ``q`` and ``qlang``.
 
 - Message: subject
-    businessDataList[]: values[]
+    items of businessDataList: items of values
     forTheAttentionOf:  id, name 
 - Application: name, description
 - Organization: name, description
 - MessageType: name, description
 
-The values searched by q have the following extra properties
+Note: All of the searchable fields are TranslatedString, this is why ``qlang`` has to be specified, 
+to know to which language of TransateldString it the ``q`` parameter is to be applied
+
+The values searched by ``q`` have the following extra properties
 - Case is to be ignored
 - Accents are to be ignored
  
 **Example:**
 
 Given the following value present in one of the aforementioned fields (the title for instance), the following searches will detect the message:
-- Value in searchable field: "This is some random with Special cases like épinards and François, ok?"
-- some: found
-- me rando: found
-- ok?: found
-- François: found
-- Francois: found
-- epinards: found
-- ép:found: found
-- SOME RAND: found
-- ok?This is: not found
-- This some random: not found
+- Value in searchable field: ``This is some random with Special cases like épinards and François, ok?``
+- ``some``: found
+- ``me rando``: found
+- ``ok?``: found
+- ``François``: found
+- ``Francois``: found
+- ``epinards``: found
+- ``ép``: found
+- ``SOME RAND``: found
+- ``ok?This is``: not found
+- ``This some random``: not found
