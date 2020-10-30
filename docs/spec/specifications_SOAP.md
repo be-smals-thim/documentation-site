@@ -1,6 +1,6 @@
 ---
 title: Ebox Enterprise Services Specifications  - SOAP
-sidebar_label: Specifications
+sidebar_label: Specifications - SOAP
 ---
 
 
