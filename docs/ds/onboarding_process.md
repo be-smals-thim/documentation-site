@@ -15,8 +15,11 @@ Before starting any integration, it is necessary to obtain a first agreement in 
 This agreement will be requested by the eBoxIntegration team to the NSSO e-Box managers. 
 
 ## Formal request
-A formal request must then be submitted via a dedicated form in order to become a new e-Box docSender: [e-Box sending request form](https://info.eboxenterprise.be/fr/documents/word/e-Box_Entreprise_FicheDemandeEnvoi_FR.docx).
-Once completed, send it to [eBoxIntegration@smals.be](mailto:eBoxIntegration@smals.be).
+A formal request must then be submitted via an online form in order to become a new e-Box docSender:
+- [Document Sender Onboarding form (French)](https://www.onboarding.eboxenterprise.be/content/forms/af/ebox/full-onboarding-document-sender-form.html?afAcceptLang=fr)
+- [Document Sender Onboarding form (Dutch)](https://www.onboarding.eboxenterprise.be/content/forms/af/ebox/full-onboarding-document-sender-form.html?afAcceptLang=nl)
+
+If there is a problem with the online form, you can [download the offline form as a docx file](https://info.eboxenterprise.be/fr/documents/word/e-Box_Entreprise_FicheDemandeEnvoi_FR.docx) and send it completed to [eBoxIntegration@smals.be](mailto:eBoxIntegration@smals.be).
 
 ## Request validation
 The eBoxIntegration team is responsible for technically validating the received form.
