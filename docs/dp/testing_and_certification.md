@@ -12,7 +12,7 @@ These only apply to the consultation profile as it is the only one which has an 
 - Certification will do HTTP requests the certifying DP. The output of the DP will be validated against 
 pre-determined test data.
 - This system will first require a reset of the DP System Data using special purpose method /certication/resetDataSet 
-which does not take any arguments
+which does not take any arguments.
     - This is needed to avoid dataset drift on date based fields
 - This method will be secured by a new Scope which will only be attributed to www.eboxenterprise.be certifying authority
     - The name of the scope is ...

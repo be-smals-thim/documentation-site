@@ -143,18 +143,27 @@ Search excludes research in the document or body content themselves.
 The text search is driven by the ``q`` and ``qlang`` fields, which must both be provided for the text search to work. 
 Possible ``qlang`` values are: ``fr``,``nl``, ``de``
 
-**Note:**  Current API specification at the time of writing do not contain the enum of values, 
+**Note:**  API specification at the time of writing do not contain the enum of values, 
 this will be addressed in subsequent versions at which point the list provided here will be removed 
 
 The ``q`` parameter represent a portion of text to be found in all "visible textual information". The following API fields are searched 
 based on ``q`` and ``qlang``.
 
-- Message: subject
-    items of businessDataList: items of values
-    forTheAttentionOf:  id, name 
-- Application: name, description
-- Organization: name, description
-- MessageType: name, description
+- Message: 
+    - subject
+    - values of business data (businessDataList[].values[])
+    - forTheAttentionOf:  
+        - id
+        - name 
+- Application: 
+    - name
+    - description
+- Organization: 
+    - name
+    - description
+- MessageType: 
+    - name
+    - description
 
 Note: All of the searchable fields are TranslatedString, this is why ``qlang`` has to be specified, 
 to know to which language of TransateldString it the ``q`` parameter is to be applied
