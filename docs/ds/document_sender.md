@@ -115,6 +115,7 @@ Also you cannot let a ``messageTypeId`` and a ``senderApplicationId`` that are u
 The [oauth introspect example](https://github.com/e-Box-Enterprise-Belgium/examples/tree/master/ouath-introspect) shows how an Oauth token can be retrieved.
 You have to request your AccessToken to the Authorization Server.
 The ``GetAccessTokenV3.getAccessToken()`` method is the one responsible of getting the token.
+The scope needed to publish message is ``scope:document:management:consult:ws-eboxrestentreprise:publicationsender``.
 
 <table>
 <tr><td>OAuth Authorization Server URL (ACC)</td><td>https://services-acpt.socialsecurity.be/REST/oauth/v3/token</td></tr>
