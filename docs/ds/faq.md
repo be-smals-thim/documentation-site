@@ -2,6 +2,15 @@
 title: FAQ
 ---
 
+### I get a 401 Unauthorized
+It means that the token in invalid or expired or missing. See [how to get a token](document_sender.md#getting-an-oauth-token-for-publication).
+
+### I get a 403 Forbidden
+It means that the token is valid but a scope is missing. To publish message by a REST request, the needed scope is ``scope:document:management:consult:ws-eboxrestentreprise:publicationsender``.
+Not only the scope must be attributed to you in the *Authorization Server* but you also have to put it in the request to get a token.
+You can ask [eBoxIntegration](mailto:eBoxIntegration@smals.be) to check if the scope is correctly set in the Authorization Server.
+You have to include the Client-ID in the mail.
+
 ### I published and I get the response code NO_DIGITAL_USER
 This is not an error. See the [section about NO_DIGITAL_USER](document_sender.md#no_digital_user-response-code).
 
@@ -82,3 +91,87 @@ The message in considered as read if the document marked as main content is open
 One document or the body has to be marked as the main content.
 That is to say either one of the ``mainContent`` has to be set to true or the ``bodyMainContent`` has to be set to true but not both.
 Perhaps you let the ``mainContent`` of one document to true after putting the ``bodyMainContent`` to true.
+
+### I get a 400 Bad Request with the message "Attachment mime type is not valid. See spec for list of available mime types" but I really put one of the list
+```json
+{
+    "code":"INVALID_INPUT",
+    "id":"36c21955-84ea-45c4-a59e-189d84907d08",
+    "message":"Attachment mime type is not valid. See spec for list of available mime types"
+}
+```
+The list of available [MIME types](https://tools.ietf.org/html/rfc2046) is in the [specifications of the Message Registry Service](../spec/specifications.md#message-registry-service).
+The MIME type that is effectively sent can be found in the HTTP request you sent.
+You should see something like:
+```http
+Content-Disposition: form-data; name="upfile2"; filename="PDFTestFile.pdf"
+Content-Type: application/pdf
+
+(data)
+```
+There you can see the MIME type sent.
+Pay attention that depending on the tool or the library you are using to generate the HTTP request, the MIME type set can change from a tool to another even if the file is the same.
+For example, some tools put ``text/xml`` as MIME type for a XML file while other tools put ``application/xml``.
+If the tool or library you are using puts an alternative of an available mime types in the list from the specifications and that alternative is an [existing MIME type](https://www.iana.org/assignments/media-types/media-types.xhtml), let us know [by e-mail](mailto:eBoxIntegration@smals.be).
+
+### I get a 400 Bad Request with the message "Invalid sender: user credentials does not match payload"
+```json
+{
+    "code": "INVALID_SENDER",
+    "id": "9e0f39cd-e32d-43b5-9e23-612f9a98758e",
+    "message": "Invalid sender: user credentials does not match payload"
+}
+```
+You receive this message if you attempt to publish with an ``senderOrganizationId`` that is not the same CBE number than the one we can retrieve from the certificate you used to request the token and you are not a mandatary.
+If you are not a mandatary, check if the CBE number you entered is correctly your organization CBE number and check the CBE number in your certificate.
+In the certificate, the CBE number can be found in one of the **OU** field. See the [x509 certificate page](../common/x509_certificate.md).
+If you are a mandatary, ask support to [eBoxIntegration](mailto:eBoxIntegration@smals.be).
+
+### I get a 400 Bad Request with a message starting by "Invalid Schema" and with required keys not found but they are in my request
+I can happen if the request is not correctly formatted.
+For example, perhaps a bracket wrongly placed ends your request before the required keys not found.
+
+### I get a 400 Bad Request with the message "Json Attachments number is inconsistent with number of parts"
+```json
+{
+    "code": "INVALID_INPUT",
+    "id": "cedcd3f9-d6cf-48a2-8a48-3da294d1ed8e",
+    "message": "Json Attachments number is inconsistent with number of parts"
+}
+```
+That error occurs when there are not as many file parts in the HTTP request than the number of attachments in the request.
+
+### I get a 400 Bad Request with the message "Some json attachment info do not match any file upload part"
+```json
+{
+    "code": "INVALID_INPUT",
+    "id": "debb5d53-cd58-4483-a4f5-d0074c4b0a68",
+    "message": "Some json attachment info do not match any file upload part"
+}
+```
+It means that in the request, in the ``attachment`` list, there is a ``httpPartName`` with a value that is not found in the file parts in the HTTP request.
+The file parts in the HTTP request are something like:
+```http
+Content-Disposition: form-data; name="upfile1"; filename="PDFTestFile.pdf"
+Content-Type: application/pdf
+
+(data)
+```
+There you can see ``name="upfile1"``. This is what name is expected in a ``httpPartName`` value.
+
+### I get a 400 Bad Request with the message "Missing mediaType or fileName in part"
+```json
+{
+    "code": "INVALID_INPUT",
+    "id": "a5058f70-a63e-4c5b-9e6b-905e7375cfde",
+    "message": "Missing mediaType or fileName in part"
+}
+```
+It means that there is something missing in one of the file parts in the HTTP request.
+The file parts in the HTTP request are something like:
+```http
+Content-Disposition: form-data; name="upfile1"; filename="PDFTestFile.pdf"
+Content-Type: application/pdf
+
+(data)
+```
