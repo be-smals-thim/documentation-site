@@ -41,7 +41,7 @@ This service is in the Social Security legal framework. It is only available for
 More info on the [smals RegisteredMail reuse page](https://reuse.smals.be/fr/service/registeredmail).
 
 ### Technical specifications of the registered mail service
-- [RegisteredMail - Specification Guide](/openapi/RegisteredMail_WS_Specif_Guide.pdf)
+- [RegisteredMail - Specification Guide](/openapi/SOAP/RegisteredMail_WS_Specif_Guide.pdf)
 
 ### ePost contract (WSDL-XSD)
 - [epost-sei-1.5.4](/openapi/SOAP/epost-sei-1.5.4.jar)
