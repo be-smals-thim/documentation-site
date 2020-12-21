@@ -22,9 +22,15 @@ If you received an error message after an attempt to send a SOAP publication req
 Pay attention that not all the pages on that website are true for the case of e-Box web services.
 - [How to generate a P12 or JKS keystore](https://www.socialsecurity.be/site_fr/general/helpcentre/soa/developer_create_keystore.htm)
 
+### Endpoints
+| Environment | Endpoint |
+|-------------|----------|
+| Production  | ``https://services.socialsecurity.be/EBoxMessage/v1`` |
+| Acceptation | ``https://services-acpt.socialsecurity.be/EBoxMessage/v1`` |
 
-## CitizenProfile
-CitizenProfile is used to know if a citizen accepted the terms and conditions of the citizen eBox.
+
+## Restricted CitizenProfile
+The restricted version of CitizenProfile is used to know if a citizen accepted the terms and conditions of the citizen eBox.
 There is no need of this service for publication to organizations.
 Please note that the language code returned by the service is not the language to use for publication.
 
@@ -33,6 +39,12 @@ Please note that the language code returned by the service is not the language t
 
 ### CitizenProfile contract (WSDL-XSD)
 - [CitizenProfile contract 1.3.2](/openapi/SOAP/serviceclient-citizenprofile-1.3.2-contract.zip)
+
+### Endpoints
+| Environment | Endpoint |
+|-------------|----------|
+| Production  | ``https://services.socialsecurity.be/CitizenProfileVarA/v1`` |
+| Acceptation | ``https://services-acpt.socialsecurity.be/CitizenProfileVarA/v1`` |
 
 
 ## ePost
@@ -45,3 +57,9 @@ More info on the [smals RegisteredMail reuse page](https://reuse.smals.be/fr/ser
 
 ### ePost contract (WSDL-XSD)
 - [epost-sei-1.5.4](/openapi/SOAP/epost-sei-1.5.4.jar)
+
+### Endpoints
+| Environment | Endpoint |
+|-------------|----------|
+| Production  | ``https://services.socialsecurity.be/RegisteredMail/v1`` |
+| Acceptation | ``https://services-acpt.socialsecurity.be/RegisteredMail/v1`` |
