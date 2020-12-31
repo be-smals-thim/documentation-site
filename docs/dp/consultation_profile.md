@@ -186,3 +186,38 @@ Given the following value present in one of the aforementioned fields (the title
 - ``SOME RAND``: found
 - ``ok?This is``: not found
 - ``This some random``: not found
+
+## Testing on eboxenterprise.be
+
+e-Box Enterprise provides a unified view of all Document Providers through the [https://eboxenterprise.be](eboxenterprise.be) website.
+As a Document Provider you are required to validate your implementation in this interface.
+
+There are two ways to test a Document Provider on this interface.
+
+1) Using the [wwwacc.eboxenterprise.be](wwwacc.eboxenterprise.be) website which is part of a distinct environment as production.
+This means that the Authorization server is different from the one in production, and that production data cannot be showed.
+2) Using the in app testing features called **'Local DP'** which allow secure testing directly in production. A Local DP is
+only configured in your browser so it will have no impact on other users of the application.
+
+We will describe how to use the more powerful and secure Local DP approach . This is however to be considered as an experimental feature
+so your feedback is very welcome. If things goes as planned, it could fully replace the first approach.
+
+In oder to test using the second approach:
+
+1) log into the interface of your choice: acc or prd
+2) Open the javascript console (by pressing F12 on most browsers)
+3) Add your DP using the following javascript code
+```javascript
+app.addDocumentProviders({'url':'https://mydevelopmentdp.com/pathToRoot',name:'test_mydp', version:'1.0.0', id:'test_mydp'})
+```
+4) Refresh your browser
+
+You should see a very different page with a watermark and a big red message indicating that you have activate a development feature.
+The DP will now be configured in your local storage so you will not have to reconfigure it.
+
+If you want to remove the configuration use the following javascript code
+
+```javascript
+app.resetDocumentProviders()
+```
+
