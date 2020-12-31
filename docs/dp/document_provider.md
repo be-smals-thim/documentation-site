@@ -18,7 +18,7 @@ Before starting the technical integration as Document Provider, make sure to com
 The Message Registry Service is the most important part of the Document Provider. There are two main levels of service that a Document Provider can offer.
 
 - [Consultation](consultation_profile.md): Only implement the Consultation parts of the API. This allows to expose messages to the Document Consumers
-- Publication: Also implement the Publication parts of the API. Allowing replies to messages and new publication being done through a standardized method.
+- [Publication](publication_profile.md): Also implement the Publication parts of the API. Allowing replies to messages and new publication being done through a standardized method.
 
 The Consultation part is required to be considered a Document Provider while the Publication is optional.
 

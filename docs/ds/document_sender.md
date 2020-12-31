@@ -115,6 +115,7 @@ Also you cannot let a ``messageTypeId`` and a ``senderApplicationId`` that are u
 The [oauth introspect example](https://github.com/e-Box-Enterprise-Belgium/examples/tree/master/ouath-introspect) shows how an Oauth token can be retrieved.
 You have to request your AccessToken to the Authorization Server.
 The ``GetAccessTokenV3.getAccessToken()`` method is the one responsible of getting the token.
+The scope needed to publish message is ``scope:document:management:consult:ws-eboxrestentreprise:publicationsender``.
 
 <table>
 <tr><td>OAuth Authorization Server URL (ACC)</td><td>https://services-acpt.socialsecurity.be/REST/oauth/v3/token</td></tr>
@@ -148,7 +149,7 @@ After importing that collection,
 ## Our implementation choices
 
 There are some restrictions in our implementation of the service:
-- [Following a legal advice](/doc_media/20200618%20Taalwetgeving%20en%20e-Box.docx), we do not support publication with several languages. Only one among ``fr``, ``nl`` and ``de`` has to be selected in a publication request for the subject, attachment title, body content and business data values.
+- We do not support publication with several languages. Only one among ``fr``, ``nl`` and ``de`` has to be selected in a publication request for the subject, attachment title, body content and business data values.
 - We do not support the ``attachmentTitle`` property in the ``AttachmentToPublish`` object. The attachment title will be the file name of the uploaded file.
 - ``/linkEboxMessage`` feature is not implemented but the broadcast feature still available by asking the procedure to [eBoxIntegration@smals.be](mailto:eBoxIntegration@smals.be).
 - We do not support dynamic expiration date. That is to say, in the API about the ``messageToPublish`` object, the ``expirationDate`` property is ignored. The expiration date will be calculated from the current date plus the validity period defined for the message type. You can see the ``validityPeriod`` by doing a GET on ``<endpoint>/referenceData/messageTypes/<messageType-ID>``
